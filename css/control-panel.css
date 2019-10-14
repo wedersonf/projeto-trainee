@@ -23,7 +23,7 @@ table td, button {
 table {
     /* border: 2px solid red; */
     border-collapse: collapse;
-    width: 98vw;
+    width: 100%;
 }
 
 td {
@@ -35,6 +35,10 @@ td {
 td.colImg {
     /* background: lightblue; */
     display: flex;
+}
+
+.colImg {
+    text-align: center;
 }
 
 .colImg * {
@@ -58,7 +62,7 @@ td button {
 .colType {
     padding: 2px 7px 2px 7px;
     width: 10%;
-
+    text-align: center;
     /* border-left: 1px solid black; */
 }
 
@@ -82,7 +86,7 @@ td button {
 .colDescription {
     padding: 2px 7px 2px 7px;
     width: 50%;
-
+    text-align: center;
     /* border-left: 1px solid black; */
 }
 
@@ -127,4 +131,9 @@ th {
     /* font-family: 'Courier New', Courier, monospace; */
     padding: 5px;
     font-size: 1.2vw;
+}
+
+#content {
+    margin: 25px;
+    border: solid 1px black;
 }
