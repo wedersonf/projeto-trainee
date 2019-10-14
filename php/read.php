@@ -3,13 +3,47 @@
 <head>
     <title>Painel de Controle</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="../css/control-panel.css" >
+    <link rel="stylesheet" href="../css/control-panel.css" >
+    
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/frontend_1.css">
+    <link rel="stylesheet" href="../css/frontend_2.css">
 </head>
 
 <body>
     
     <!-- HEADER -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images/frontend/ID_Visual_WED.png" alt="Wed">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INÍCIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">PAINEL</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">CONTATO</a>
+                    </li> -->
+                </ul>
+                <!-- <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="">
+                    <button type="submit" class="btn btn-light">BUSCAR</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- TABELA CRUD -->
     <?php
     
     require ("./classes/ProdutoCRUD.php");  // CRUD dos produtos
@@ -56,8 +90,22 @@
 
     ?>
 
-    <!-- FOOTER -->
+    <!--FOOTER-->
+    <hr id="hr">
+    <footer id="footer">
+        <img src="../images/frontend/ID_Visual_WED.png" id="logo">
+        <h4 id="desenvol">Desenvolvido por Equipe Wederson</h4>
+        <a href="http://instagram.com/"><img src="../images/frontend/insta.png" id="insta"></a>
+        <a href="http://facebook.com/"><img src="../images/frontend/face.png" id="face"></a>
+        <a href="http://twitter.com/"><img src="../images/frontend/twitter.png" id="twitter"></a>
+    </footer>
 
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../javascript/bootstrap/bootstrap.min.js"></script>
+
+    <!-- SCRIPT -->
     <script src="../javascript/control-panel-btns.js"></script>
 
 </body>

@@ -1,0 +1,18 @@
+nav.navbar.bg-light {
+	background-color: #8aae8a !important;
+}
+
+a.navbar-brand img {
+	height: 40px;
+}
+
+nav.navbar button.btn-light {
+	margin-left: 3px;
+	border-color: rgba(255, 255, 255, .5);
+	background-color: rgba(255, 255, 255, .3);
+}
+
+#wed-carousel {
+	min-height: 100px;
+	background-color: rgba(0, 0, 0, .2);
+}
