@@ -1,0 +1,130 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 20px 50px 20px 10px;
+    padding:0;
+    background-color: #333;
+}
+
+table td, input {
+    /* color: green; */
+    /* text-align: center; */
+    font-size: 1vw;
+}
+
+table td, button {
+    /* color: purple; */
+    /* text-align: center; */
+    font-size: 1vw;
+}
+
+table {
+    /* border: 2px solid red; */
+    border-collapse: collapse;
+    width: 98vw;
+}
+
+td {
+    /* border: 1px solid blue; */
+    padding: 0px;
+    margin: 0px;
+}
+
+td.colImg {
+    /* background: lightblue; */
+    display: flex;
+}
+
+.colImg * {
+    line-height: 35px;
+}
+
+td input {
+    /* background: yellow; */
+    height: 35px;
+    width: 100%;
+    border: 0;
+    background: transparent;
+}
+
+td button {
+    /* background: yellow; */
+    height: 35px;
+    width: 100%;
+}
+
+.colType {
+    padding: 2px 7px 2px 7px;
+    width: 10%;
+
+    /* border-left: 1px solid black; */
+}
+
+.colType * {
+    text-align: center;
+    padding: 0 5px 0 5px;
+}
+
+.colValue {
+    padding: 2px 7px 2px 7px;
+    width: 7%;
+
+    /* border-left: 1px solid black; */
+}
+
+.colValue * {
+    text-align: right;
+    padding: 0 5px 0 5px;
+}
+
+.colDescription {
+    padding: 2px 7px 2px 7px;
+    width: 50%;
+
+    /* border-left: 1px solid black; */
+}
+
+.colDescription * {
+    text-align: center;
+    padding: 0 5px 0 5px;
+}
+
+.colButtons {
+    padding: 0 5px 0 0;
+    width: 1%;
+}
+
+.colButtons * {
+    border: 1;
+}
+
+.colId {
+    padding: 0 5px 0 5px;
+    width: 1%;
+    text-align: center;
+}
+
+#cadastro {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#cadastro * {
+    font-size: 0.8vw;
+}
+
+tr:nth-child(even) {
+    background-color: #bbb;
+}
+
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+th {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    font-size: 1.2vw;
+}
