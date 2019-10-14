@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">INÍCIO</a>
+                        <a class="nav-link" href="../index.php">INÍCIO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">PAINEL</a>
@@ -54,7 +54,7 @@
     $crud = new ProdutoCRUD ("localhost", "eletronicos", "root", "");
     $retorno = $crud -> read ();
 
-    echo '<table>
+    echo '<div id="content"><table>
         <tr> <th class="colId">ID</th> <th class="colType">TIPO</th> <th class="colValue">VALOR</th> <th class="colDescription">DESCRIÇÃO</th> <th class="colImg">IMAGEM</th> <th colspan=2></th> </tr>';
 
     echo '<tr title="Cadastre um novo produto" id="cadastro"><form enctype="multipart/form-data" action="./create.php" method="POST">
@@ -86,7 +86,7 @@
 
     // echo '<tr><td colspan=7><hr></td></tr>';
 
-    echo "</table>";
+    echo "</table></div>";
 
     ?>
 

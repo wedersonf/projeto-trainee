@@ -190,3 +190,19 @@ button.css3button {
     font-family: inherit;
     font-size: 1rem;
 }
+
+/* vini adicionou */
+
+.aside {
+    padding: 0 115px 0 115px;
+}
+
+#contato {
+    text-align: center;
+    padding: 0 415px 0 415px;
+    margin: 40px 10px 10px 10px;
+}
+
+#contato textarea {
+    height: 150px;
+}
