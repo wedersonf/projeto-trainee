@@ -133,8 +133,8 @@ button.css3button {
 
 }
 #twitter{
-    width: 40px;
-    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
     position: relative;
     left: 82%;
     bottom: 60px;
@@ -226,6 +226,53 @@ button.css3button {
     /* NAO MOSTRA CARTAS VAZIAS */
     .emptycard {
         display: none;
+    }
+
+    /* FOOTER */
+    #footer{
+        height: 350px;
+        width: 100%;
+    }
+    #logo{
+        max-width: 60%;
+        margin: 0 20% 0 20%;
+
+        position: relative;
+        right: 0;
+    }
+    #desenvol{
+        top: 160px;
+    }
+    #insta{
+        max-width: 10%;
+        max-height: unset;
+        position: unset;
+        /* left: 30%; */
+        /* bottom: -150px; */
+        display: block;
+        margin: 3% 45% 3% 45%;
+        padding: 0;
+    }
+    #face{
+        max-width: 10%;
+        max-height: unset;
+        position: unset;
+        /* left: 30%; */
+        /* bottom: -150px; */
+        display: block;
+        margin: 3% 45% 3% 45%;
+        padding: 0;
+    
+    }
+    #twitter{
+        max-width: 10%;
+        max-height: unset;
+        position: unset;
+        /* left: 30%; */
+        /* bottom: -150px; */
+        display: block;
+        margin: 3% 45% 3% 45%;
+        padding: 0;
     }
 
 }
