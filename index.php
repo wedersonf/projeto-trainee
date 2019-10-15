@@ -80,7 +80,7 @@
     <!--CONTENT-->
     <div id="geral">
       
-        <h1 id="title1">Produtos Populares</h1>
+        <h1 class="title1">Produtos Populares</h1>
 
         <?php
         
@@ -104,7 +104,7 @@
             $img_thumb = $thumb -> make ($img_link, 500, 300); // cria um thumbnail
 
             if ($counter % 4 == 0) {
-                echo '<div class="card-deck" id="card_group_1">'; //inicia uma nova linha
+                echo '<div class="card-deck card_group">'; //inicia uma nova linha
             }
 
             //cria o card
@@ -115,7 +115,7 @@
                 <div class="card-body">
                     <h5 class="card-title">'. $descricao .'</h5>
                     <p class="card-text">'. $tipo .'</p>
-                    <h3 id="price">R$ '. number_format((float)$valor, 2, '.', ',') .'</h3>
+                    <h3 class="price">R$ '. number_format((float)$valor, 2, '.', ',') .'</h3>
                     <button type="button" name="" value="" class="css3button">Adicionar ao carrinho</button>
                 </div>
             </div>';
@@ -129,14 +129,14 @@
 
         //completa fileira com espaços vazios
         while ($counter % 4 != 0) {
-            echo '<div style="visibility: hidden;"class="card">
-                <a href="" target="_blank" id="link">
+            echo '<div style="visibility: hidden;"class="card emptycard">
+                <a href="" target="_blank" class="link">
                     <img src="" class="card-img-top" alt="foto do produto">
                 </a>
                 <div class="card-body">
                     <h5 class="card-title"></h5>
                     <p class="card-text"></p>
-                    <h3 id="price"></h3>
+                    <h3 class="price"></h3>
                     <button type="button" name="" value="" class="css3button">Adicionar ao carrinho</button>
                 </div>
             </div>';
@@ -182,7 +182,7 @@
     <hr>
 
     <!--CONTATO-->
-    <h1 id="title1">Fale conosco</h1>
+    <h1 class="title1">Fale conosco</h1>
     <form class="aside form-group" id="contato" method="POST" action="./php/contato.php">
         <input class="form-control" type="text" name="nome" placeholder="Nome">
         <br>

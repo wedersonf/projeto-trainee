@@ -9,31 +9,13 @@
     margin-bottom: 20px;
 }
    
-#card_group_1{
+.card_group{
     padding-top: 40px;
     padding-right: 100px;
     padding-left: 100px;
     margin: 0px;
 }
-#card_group_2{
-    padding-top: 20px;
-    padding-right: 100px;
-    padding-left: 100px;
-    margin: 0px;
-}
-#card_group_3{
-    padding-top: 20px;
-    padding-right: 100px;
-    padding-left: 100px;
-    margin: 0px;
-}
-#card_group_4{
-    padding-top: 20px;
-    padding-right: 100px;
-    padding-left: 100px;
-    margin: 0px;
-    margin-bottom: 20px;
-}
+
 .card-img-top{
     padding: 1%;
     max-width: 100%;
@@ -50,7 +32,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
-#price{
+.price{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -78,7 +60,7 @@ button.css3button {
 		0px -1px 3px rgba(000,000,000,0.4),
 		0px 1px 0px rgba(255,255,255,0.9);
 }
-#title1{
+.title1{
     position: relative;
     text-align: center;
     padding-top: 1px;
@@ -103,24 +85,7 @@ button.css3button {
     opacity: 0.5;
     top: 835px;
 }
-#title2{
-    position: relative;
-    text-align: center;
-    margin-top: 15px;
-    padding-top: 7px;
-    padding-bottom: 6px;
-    top: 13px;
-    font-family: inherit;
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.1;
-    box-sizing: inherit;
-    text-transform: uppercase;
-    margin-left: 480px;
-    margin-right: 480px;
-    color: #232323;
 
-}
 #hr{
     margin: 1px;
     color: black;
@@ -168,15 +133,15 @@ button.css3button {
 
 }
 #twitter{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     position: relative;
     left: 82%;
     bottom: 60px;
     margin-bottom: -60px;
 }
 
-#link{
+.link{
     margin-left: auto;
     margin-right: auto;
 }
@@ -210,4 +175,57 @@ button.css3button {
 
 #contato textarea {
     height: 150px;
+}
+
+/* DESIGN RESPONSIVO */
+
+@media only screen and (max-device-width: 900px) {
+
+    /* SINGLE COLUMN */
+    #geral{
+        background-color: white;
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .card_group{
+        padding-top: 0px;
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0px;
+    }
+    .title1{
+        position: relative;
+        text-align: center;
+        padding-top: 1px;
+        padding-bottom: 36px;
+        font-family: inherit;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.1;
+        box-sizing: inherit;
+        text-transform: uppercase;
+        margin-left: 0;
+        margin-right: 0;
+        color: #232323;
+    }
+
+    /* QUEM SOMOS e CONTATO */
+    .aside {
+        padding: 0;
+    }
+    
+    #contato {
+        text-align: center;
+        padding: 0;
+        margin: 25px 10px 30px 10px;
+    }
+
+
+    /* NAO MOSTRA CARTAS VAZIAS */
+    .emptycard {
+        display: none;
+    }
+
 }
