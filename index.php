@@ -15,7 +15,6 @@
 
     <!--BOOTSTRAP CSS MATHEUS-->
     <link rel="stylesheet" href="css/frontend_2.css">
-
 </head>
 
 <body>
@@ -70,11 +69,11 @@
         </div>
         <a class="carousel-control-prev" href="#wed-carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">Anterior</span>
         </a>
         <a class="carousel-control-next" href="#wed-carousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">Próximo</span>
         </a>
     </div>
 
@@ -102,7 +101,7 @@
             $imagem = $produto[4]; // endereço da imagem
 
             $img_link = "./php/".$produto[4]; // arruma endereço da imagem
-            $img_thumb = $thumb -> make ($img_link, 300, 300); // cria um thumbnail
+            $img_thumb = $thumb -> make ($img_link, 500, 300); // cria um thumbnail
 
             if ($counter % 4 == 0) {
                 echo '<div class="card-deck" id="card_group_1">'; //inicia uma nova linha
@@ -110,16 +109,16 @@
 
             //cria o card
             echo '<div class="card">
-            <a href="'. $img_link .'" target="_blank" id="link">
-                <img src="'. $img_thumb .'" class="card-img-top" alt="foto do produto">
-            </a>
-            <div class="card-body">
-                <h5 class="card-title">'. $descricao .'</h5>
-                <p class="card-text">'. $tipo .'</p>
-                <h3 id="price">R$ '. number_format((float)$valor, 2, '.', ',') .'</h3>
-                <button type="button" name="" value="" class="css3button">Adicionar ao carrinho</button>
-            </div>
-        </div>';
+                <a href="'. $img_link .'" target="_blank" id="link">
+                    <img src="'. $img_thumb .'" class="card-img-top" alt="foto do produto">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">'. $descricao .'</h5>
+                    <p class="card-text">'. $tipo .'</p>
+                    <h3 id="price">R$ '. number_format((float)$valor, 2, '.', ',') .'</h3>
+                    <button type="button" name="" value="" class="css3button">Adicionar ao carrinho</button>
+                </div>
+            </div>';
 
             if ($counter % 4 == 3) {
                 echo "</div>"; //termina a linha
@@ -128,8 +127,24 @@
             $counter ++;
         }
 
-        if ($counter % 4 != 0) {
-            echo "</div>"; // termina a linha
+        //completa fileira com espaços vazios
+        while ($counter % 4 != 0) {
+            echo '<div style="visibility: hidden;"class="card">
+                <a href="" target="_blank" id="link">
+                    <img src="" class="card-img-top" alt="foto do produto">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <h3 id="price"></h3>
+                    <button type="button" name="" value="" class="css3button">Adicionar ao carrinho</button>
+                </div>
+            </div>';
+
+            $counter ++;
+            if ($counter % 4 == 0) {
+                echo "</div>";
+            }
         }
         
         ?>
@@ -152,14 +167,11 @@
                     data-parent="#accordionExample">
                     <div class="card-body">
                         <h5 align="justify" id="quemtxt">
-                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspAnim pariatur cliche
-                            reprehenderit,enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                            officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                            eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
-                            nulla assumenda shoreditchet. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-                            craft beer farm-to-table, rawdenim aesthetic synth nesciunt you probably haven't heard of
-                            them accusamus labore sustainable VHS.
+                        &emsp;Fundado em 2003, o <strong>We:D</strong> foi um dos pioneiros no comércio eletrônico brasileiro e hoje é o maior e-commerce do segmento de tecnologia na América Latina. Este ano, a empresa completa 16 anos de histórias e conquistas de um time obcecado por agilidade, qualidade de atendimento, velocidade de entrega e respeito pelo consumidor.
+                        <br>&emsp;Com preços imbatíveis e mais de 20 mil produtos em seu catálogo, o <strong>We:D</strong> está sempre à frente e traz em primeira mão os melhores lançamentos do mercado mundial.
+                        <br>&emsp;Desde sua fundação, o <strong>We:D</strong> já atendeu mais de 6 milhões de pessoas e realizou entregas em mais de 5.000 cidades. Entre as empresas clientes, destacam-se grandes grupos como Microsoft, Banco Bradesco, Banco Itaú, Petrobrás, Exxon, Walt Disney, Ford, Rede Globo, Volvo, além de vários órgãos do Governo Brasileiro.
+                        <br>&emsp;O e-commerce é um dos sites mais acessados do país e lidera o ranking das lojas virtuais mais recomendadas pelos consumidores brasileiros, no segmento de tecnologia com os principais índices de avaliação e selos de qualidade da internet.
+                        <br>&emsp;Além do e-commerce, o <strong>We:D</strong> é um grande incentivador do e-sport, sendo responsável pela criação de uma das maiores equipes de League of Legends do Brasil, a <strong>We:D</strong> e-Sports, tricampeã nacional e a primeira organização do país a participar de um Campeonato Mundial.
                         </h5>
                     </div>
                 </div>
@@ -176,7 +188,7 @@
         <br>
         <input class="form-control" type="email" name="email" placeholder="E-mail">
         <br>
-        <textarea class="form-control" name="message" placeholder="Mensagem"></textarea>
+        <textarea class="form-control" name="mensagem" placeholder="Mensagem"></textarea>
         <br>
         <button type="submit" value="" class="css3button">Enviar</button>
     </form>
