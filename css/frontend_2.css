@@ -35,8 +35,8 @@
     margin-bottom: 20px;
 }
 .card-img-top{
-    padding-top: 10px;
-    max-width: 130px;
+    padding: 1%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -125,15 +125,16 @@ button.css3button {
     margin: 1px;
     color: black;
 }
+
 #footer{
     background-color: rgba(0, 78, 0, 0.459);
     height: 100px;
-
 }
 #logo{
     position: relative;
     max-width: 200px;
     max-height: 200px;
+    right: -9%;
     padding-top: 20px;
     padding-left: 10px;
 }
@@ -141,8 +142,9 @@ button.css3button {
     position: relative;
     bottom: 55px;
     top: -45px;
-    left: 530px;
-    margin-right: 550px;
+    width: 50%;
+    left: 25%;
+    text-align: center;
     margin-bottom: -40px;   
     font-family: inherit;
     font-size: 1rem;
@@ -152,7 +154,7 @@ button.css3button {
     max-width: 40px;
     max-height: 40px;
     position: relative;
-    left: 1130px;
+    left: 80%;
     bottom: 60px;
     margin-bottom: -60px;
 }
@@ -160,7 +162,7 @@ button.css3button {
     max-width: 40px;
     max-height: 40px;
     position: relative;
-    left: 1140px;
+    left: 81%;
     bottom: 60px;
     margin-bottom: -60px;
 
@@ -169,10 +171,11 @@ button.css3button {
     width: 45px;
     height: 45px;
     position: relative;
-    left: 1150px;
+    left: 82%;
     bottom: 60px;
     margin-bottom: -60px;
 }
+
 #link{
     margin-left: auto;
     margin-right: auto;
@@ -189,6 +192,8 @@ button.css3button {
 #quemtxt{
     font-family: inherit;
     font-size: 1rem;
+    padding: 0 2% 0 2%;
+    line-height: 130%;
 }
 
 /* vini adicionou */
@@ -199,8 +204,8 @@ button.css3button {
 
 #contato {
     text-align: center;
-    padding: 0 415px 0 415px;
-    margin: 40px 10px 10px 10px;
+    padding: 0 500px 0 500px;
+    margin: 45px 10px 30px 10px;
 }
 
 #contato textarea {
