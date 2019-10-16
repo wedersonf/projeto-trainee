@@ -61,19 +61,14 @@ button.css3button {
 		0px 1px 0px rgba(255,255,255,0.9);
 }
 .title1{
-    position: relative;
     text-align: center;
-    padding-top: 1px;
-    padding-bottom: 6px;
-    top: 30px;
+    padding: 30px 0 0 0;
     font-family: inherit;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.1;
     box-sizing: inherit;
     text-transform: uppercase;
-    margin-left: 480px;
-    margin-right: 480px;
     color: #232323;
 }
 #linha{
@@ -133,8 +128,8 @@ button.css3button {
 
 }
 #twitter{
-    width: 40px;
-    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
     position: relative;
     left: 82%;
     bottom: 60px;
@@ -169,7 +164,7 @@ button.css3button {
 
 #contato {
     text-align: center;
-    padding: 0 500px 0 500px;
+    padding: 0 30% 0 30%;
     margin: 45px 10px 30px 10px;
 }
 
@@ -196,19 +191,7 @@ button.css3button {
         margin: 0px;
     }
     .title1{
-        position: relative;
-        text-align: center;
-        padding-top: 1px;
-        padding-bottom: 36px;
-        font-family: inherit;
-        font-size: 1.25rem;
-        font-weight: 700;
-        line-height: 1.1;
-        box-sizing: inherit;
-        text-transform: uppercase;
-        margin-left: 0;
-        margin-right: 0;
-        color: #232323;
+        padding: 30px;
     }
 
     /* QUEM SOMOS e CONTATO */
@@ -226,6 +209,53 @@ button.css3button {
     /* NAO MOSTRA CARTAS VAZIAS */
     .emptycard {
         display: none;
+    }
+
+    /* FOOTER */
+    #footer{
+        height: 350px;
+        width: 100%;
+    }
+    #logo{
+        max-width: 60%;
+        margin: 0 20% 0 20%;
+
+        position: relative;
+        right: 0;
+    }
+    #desenvol{
+        top: 160px;
+    }
+    #insta{
+        max-width: 10%;
+        max-height: unset;
+        position: unset;
+        /* left: 30%; */
+        /* bottom: -150px; */
+        display: block;
+        margin: 3% 45% 3% 45%;
+        padding: 0;
+    }
+    #face{
+        max-width: 10%;
+        max-height: unset;
+        position: unset;
+        /* left: 30%; */
+        /* bottom: -150px; */
+        display: block;
+        margin: 3% 45% 3% 45%;
+        padding: 0;
+    
+    }
+    #twitter{
+        max-width: 10%;
+        max-height: unset;
+        position: unset;
+        /* left: 30%; */
+        /* bottom: -150px; */
+        display: block;
+        margin: 3% 45% 3% 45%;
+        padding: 0;
     }
 
 }
